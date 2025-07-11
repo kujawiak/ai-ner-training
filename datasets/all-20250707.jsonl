@@ -1,0 +1,13 @@
+{"id":27,"text":"w art. 1: ust. 6 otrzymuje brzmienie:","entities":[{"id":484,"label":"ART","start_offset":2,"end_offset":8},{"id":485,"label":"UST","start_offset":10,"end_offset":16}],"relations":[],"Comments":[]}
+{"id":32,"text":"w art. 21b ust. 1 otrzymuje brzmienie:","entities":[{"id":429,"label":"ART","start_offset":2,"end_offset":10},{"id":431,"label":"UST","start_offset":11,"end_offset":17}],"relations":[],"Comments":[]}
+{"id":34,"text":"w art. 2 ust. 15g otrzymuje brzmienie:","entities":[{"id":441,"label":"ART","start_offset":2,"end_offset":8},{"id":443,"label":"UST","start_offset":9,"end_offset":17}],"relations":[],"Comments":[]}
+{"id":37,"text":"po ust. 11 dodaje się ust. 11a w brzmieniu:","entities":[{"id":452,"label":"UST","start_offset":3,"end_offset":10},{"id":456,"label":"UST","start_offset":22,"end_offset":30}],"relations":[],"Comments":[]}
+{"id":39,"text":"dodaje się ust. 5 w brzmieniu:","entities":[{"id":463,"label":"UST","start_offset":11,"end_offset":17}],"relations":[],"Comments":[]}
+{"id":40,"text":"w art. 19:","entities":[{"id":468,"label":"ART","start_offset":2,"end_offset":9}],"relations":[],"Comments":[]}
+{"id":42,"text":"w art. 144 w ust. 1:","entities":[{"id":476,"label":"ART","start_offset":2,"end_offset":10},{"id":477,"label":"UST","start_offset":13,"end_offset":19}],"relations":[],"Comments":[]}
+{"id":43,"text":"art. 16 otrzymuje brzmienie:","entities":[{"id":479,"label":"ART","start_offset":0,"end_offset":7}],"relations":[],"Comments":[]}
+{"id":44,"text":"w art. 19 w ust. 1 pkt 2 otrzymuje brzmienie:","entities":[{"id":478,"label":"ART","start_offset":2,"end_offset":9},{"id":480,"label":"UST","start_offset":12,"end_offset":18}],"relations":[],"Comments":[]}
+{"id":50,"text":"po art. 44 dodaje się art. 44a w brzmieniu:","entities":[{"id":438,"label":"ART","start_offset":3,"end_offset":10},{"id":440,"label":"ART","start_offset":22,"end_offset":30}],"relations":[],"Comments":[]}
+{"id":51,"text":"w art. 93a w ust. 1 w pkt 6 kropkę zastępuje się średnikiem i dodaje się pkt 7 w brzmieniu:","entities":[{"id":426,"label":"ART","start_offset":2,"end_offset":10},{"id":428,"label":"UST","start_offset":13,"end_offset":19}],"relations":[],"Comments":[]}
+{"id":52,"text":"w art. 32 ust. 2 i 3 otrzymują brzmienie:","entities":[{"id":419,"label":"ART","start_offset":2,"end_offset":9},{"id":421,"label":"UST","start_offset":10,"end_offset":20}],"relations":[],"Comments":[]}
+{"id":53,"text":"w art. 11 w ust. 4 uchyla się pkt 4;","entities":[{"id":413,"label":"ART","start_offset":2,"end_offset":9},{"id":414,"label":"UST","start_offset":12,"end_offset":18}],"relations":[],"Comments":[]}
