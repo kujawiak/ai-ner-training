@@ -33,7 +33,14 @@ def test_model(model_path):
     # Krok 2: Pętla interaktywna
     while True:
         # Prośba o wprowadzenie tekstu przez użytkownika
-        text = input("> Wpisz tekst: ")
+        print("> Wpisz tekst (wieloliniowy, zakończ pustą linią):")
+        lines = []
+        while True:
+            line = input()
+            if line == "":
+                break
+            lines.append(line)
+        text = "\n".join(lines)
 
         # Warunek wyjścia z pętli
         if text.lower() in ["wyjdz", "exit", "quit"]:
