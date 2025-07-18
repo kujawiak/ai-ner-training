@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>NER Demo {% if model_name %}- Wyniki ({{ model_name }}){% endif %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: sans-serif; margin: 2em; background-color: #f4f4f9; color: #333; }
+        h2, h3 { color: #444; }
+        textarea { width: 100%; max-width: 600px; padding: 10px; border: 1px solid #ccc; border-radius: 4px; }
+        button { margin-top: 10px; margin-right: 10px; padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; color: white; }
+        button[formaction="/ner/result"] { background-color: #007bff; }
+        button[formaction="/ner_tf/result"] { background-color: #ff7c00; }
+        a { color: #007bff; }
+        ul { list-style-type: none; padding-left: 0; }
+        li { background-color: #fff; margin-bottom: 5px; padding: 8px; border-radius: 3px; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h2>Demo rozpoznawania encji (NER)</h2>
+    <p>Wpisz tekst w pole poniżej i wybierz model, aby zobaczyć wynik.</p>
+    <form method="post">
+        <textarea name="inputData" rows="8" cols="70" placeholder="Wpisz tekst tutaj...">{{ input_text | default('', true) }}</textarea><br>
+        <button type="submit" formaction="/ner/result">Model Tok2Vec</button>
+        <button type="submit" formaction="/ner_tf/result">Model TensorFlow</button>
+    </form>
+
+    {% if model_name %}
+        <h3>Wyniki dla: {{ model_name }}</h3>
+        
+        {% if entities %}
+            <ul>
+            {% for e in entities %}
+                <li><b>{{ e.text }}</b> ({{ e.label }})</li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <i>Nie znaleziono żadnych encji.</i>
+        {% endif %}
+
+        <br><a href="/ner_form">Wróć do czystego formularza</a>
+    {% endif %}
+</body>
+</html>
