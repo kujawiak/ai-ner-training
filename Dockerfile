@@ -1,4 +1,5 @@
-FROM python:3-alpine3.22
+FROM python:3.13-slim
+RUN apt-get update && apt-get install -y build-essential
 
 WORKDIR /app
 
@@ -6,11 +7,12 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Skopiuj plik ner_api.py
 COPY ner_api.py .
+COPY templates/ templates/
 
 # Skopiuj tylko katalog z modelem
-COPY models/api_ner_model ./models/api_ner_model
+#COPY models/api_ner_model ./models/api_ner_model
+#COPY models/api_ner_model_tf ./models/api_ner_model_tf
 
 # Domyślny port (można nadpisać przez zmienną środowiskową)
 ENV PORT=5081
